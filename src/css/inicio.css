@@ -1,0 +1,147 @@
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.inicio .video {
+    position: absolute;
+    filter: brightness(30%);
+    z-index: -2;
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    opacity: 0.6;
+}
+
+.inicio .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 560px;
+    margin-left: 60px;
+}
+
+.inicio .info .titulo {
+    font-size: 3.5rem;
+
+}
+
+.inicio .info .paragrafo {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: var( --cor-de-destaque-site);
+}
+.inicio .info .saiba-mais{
+    color: var(--cor-segundaria);
+    transition: 0.1s ease-in-out;
+}
+.inicio .info .saiba-mais:hover{
+    font-weight: 700;
+}
+
+
+.inicio .info .btn {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--cor-de-destaque-site);
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 2rem;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.inicio .info .btn:hover {
+    color: var( --cor-de-destaque-site);
+    background-color: var(--cor-segundaria);
+}
+
+.inicio .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.inicio .logo {
+    width: 550px;
+}
+.inicio .titulo-nosso{
+    text-shadow:  4px 4px 5px  #000000b0;
+    font-size: 5rem;
+    position: absolute;
+    bottom: 100px;
+    color: var( --cor-de-destaque-site);
+}
+
+@media(max-width: 1190px) {
+    .inicio {
+        flex-direction: column;
+    }
+
+    .inicio .info {
+        text-align: center;
+        margin: 60px 0 0;
+
+    }
+
+    .inicio .logo {
+        width: 400px;
+    }
+
+    .inicio .info .btn {
+        margin: 40px auto 0;
+        font-size: 1.6rem;
+        padding: 10px;
+        min-width: 400px;
+    }
+    .inicio .titulo-nosso{
+        bottom: 30px;
+    }
+}
+
+@media(max-width: 770px){
+    .inicio .titulo-nosso{
+        bottom: 70px;
+    }
+}
+
+
+@media(max-width: 660px) {
+    .inicio .info .titulo {
+        font-size: 2.3rem;
+    }
+
+    .inicio .info .paragrafo {
+        font-size: 2.1rem;
+    }
+
+    .inicio .info .btn {
+        min-width: 300px;
+    }
+
+    .inicio .logo {
+        width: 300px;
+    }
+    .inicio .titulo-nosso{
+        font-size: 4rem;
+    }
+}
+@media(max-width: 400px){
+    .inicio .info .titulo {
+        font-size: 2rem;
+    }
+
+    .inicio .info .paragrafo {
+        font-size: 1.8rem;
+    }
+    .inicio .info .btn {
+        min-width: 250px;
+        font-size: 1.4rem;
+    }
+    
+}
